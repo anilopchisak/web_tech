@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        body {
+            font-size: 16px;
+            margin:0;
+            padding:0;
+        }
+        #main {
+            background-color: black;
+            color: white;
+            display: flex;
+            height: 50px;
+        }
+        #menu {
+            margin-left: auto;
+            padding: 15px 20px 15px 20px;
+        }
+        #site_name {
+            font-size: 30px;
+            padding: 10px 20px 10px 20px;
+        }
+
+
+        .container {
+            width: 100%; /* Ширина макета */
+            height: 600px;
+            margin: 30px ; /* Выравнивание по центру */
+        }
+        #col1 {
+            width: auto;
+            float: left;
+            margin:10px;
+        }
+        #col2 {
+            width: 500px;
+            float: right;
+            margin-left: 30px;
+            padding-right: 50px;
+        }
+        #big_img {
+            height: 400px;
+            width: auto;
+        }
+        #small_img {
+            margin-top: 20px;
+        }
+        .s_img {
+            height: 80px;
+            width: auto;
+            margin-right: 40px;
+        }
+
+        #last {
+            margin:0;
+        }
+        #buttons {
+            margin-top: 20px;
+
+        }
+        #desc {
+            height: 390px;
+        }
+
+        #container2 {
+            margin-top:40px;
+            display: flex;
+            margin-left:30px;
+            margin-right:30px;
+            height: auto;
+        }
+        .article {
+            margin-right: 70px;
+            display: flex;
+        }
+        .m_img {
+            height: 150px;
+            width: auto;
+            margin-right: 10px;
+        }
+        #last_article {
+            margin:0;
+        }
+    </style>
+    <title>Laboratory work</title>
+</head>
+<body>
+    <nav id="main">
+        <a id="site_name">Site</a>
+        <div id="menu">
+            <form action="" method="get">
+                <input name="s" placeholder="Search..." type="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+
+            <div id="col1">
+                <center>
+                    <div>
+                        <img id="big_img" src="cat_cool.jpeg">
+                    </div>
+                </center>
+
+                <div class="row" id="small_img">
+                    <img class="s_img" src="cat_duck.jpeg">
+                    <img class="s_img" src="cat_sleepy.jpeg">
+                    <img class="s_img" src="cat_strong.jpeg">
+                    <img class="s_img" id="last" src="cat_sweety.jpeg">
+                </div>
+            </div>
+
+            <div id="col2">
+                <h1>Choose a kitty you want to be!</h1>
+                <div id="desc">
+                    <span>
+                        <p>And maybe your dream will come true!</p>
+                        <center>
+                            <p>Dezmond John Richard Wise Sep 2010</p>
+                            <p>Kitty-Cat</p>
+                            <p>Kitty-cat, Kitty-cat</p>
+                            <p>Furry and so wonderful</p>
+                            <p>Kitty-cat, Kitty-cat</p>
+                            <p>Oh, they are so lovable</p>
+                            <p>Kitty-cat, Kitty-cat</p>
+                            <p>They are always going "Meow"</p>
+                        </center>
+                    </span>
+                </div>
+
+                <div id="buttons">
+                    <button>Become a kitty!</button>
+                    <button>Stay a boring human</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container" id="container2">
+            <div class="article">
+                <img class="m_img" src="cat_silly.jpeg">
+                <span>
+                    <h2>Bizzare!</h2>
+                    <p>He's gonna fight you!</p>
+                </span>
+            </div>
+            <div class="article">
+                <img class="m_img" src="cat_thinking.jpeg">
+                <span>
+                    <h2>Think about it.</h2>
+                    <p>About what...?</p>
+                </span>
+            </div>
+            <div class="article" id="last_article">
+                <img class="m_img" src="cat_zevaet.jpeg">
+                <span>
+                    <h2>Sleep</h2>
+                    <p>Z-z-z...</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
