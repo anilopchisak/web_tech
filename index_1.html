@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratory work1</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            border: 0;
+        }
+        html, body {
+            height: 100%;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: lavender;
+            max-height: 50px;
+            display: flex;
+        }
+        .navbar a {
+            font-size: 30px;
+            padding: 10px 50px;
+        }
+        .navbar form {
+            margin-left: auto;
+            padding: 15px 50px;
+        }
+        .navbar form input {
+            font-size: 18px;
+        }
+        .navbar form button {
+            width: 80px;
+            background-color: #7964ee;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .content-container {
+            margin: 40px 50px;
+            height: 450px;
+            display: flex;
+        }
+        .content-container *:last-child {
+            padding: 0;
+        }
+
+        .col {
+            width: 50%;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .content_b_img {
+            background-color: #cdc0ff;
+            width: 700px;
+            height: 350px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .row {
+            margin: 20px 0 0 0;
+            display: flex;
+        }
+        .row *:last-child {
+            margin:0;
+        }
+        .content_s_img {
+            background-color: #cdc0ff;
+            width: 160px;
+            height: 80px;
+            text-align: center;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .col div h1 {
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+        .col div {
+            flex: 1 0 auto;
+            overflow: auto;
+        }
+        .content-col-buttons {
+            margin-top: 15px;
+            flex: 0 0 auto;
+            height: 20px;
+        }
+        .content-col-buttons *:last-child {
+            margin:0;
+        }
+        .content-col-buttons button {
+            margin-right: 10px;
+            width: 80px;
+            background-color: #7964ee;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            margin: 80px 50px;
+            display: flex;
+        }
+        .footer *:last-child {
+            margin:0;
+        }
+        .footer-article {
+            margin-right: 90px;
+            display: flex;
+        }
+        .article_img {
+            width: 260px;
+            height: 130px;
+            background-color: #cdc0ff;
+            border-radius: 10px;
+            text-align: center;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a>Site name</a>
+        <form method="get">
+            <input name="search" placeholder="Search..." type="search">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="content-container">
+        <div class="col">
+            <div class="content_b_img">
+                Image
+            </div>
+
+            <div class="row">
+                <div>
+                    <div class="content_s_img">Image</div>
+                </div>
+                <div>
+                    <div class="content_s_img">Image</div>
+                </div>
+                <div>
+                    <div class="content_s_img">Image</div>
+                </div>
+                <div>
+                    <div class="content_s_img">Image</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div>
+                <h1>Header</h1>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text </p>
+            </div>
+            <div class="content-col-buttons">
+                <button>Button</button>
+                <button>Button</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-article">
+            <div class="article_img">Image</div>
+            <div>
+                <h2>Header</h2>
+                <p>Text Text Text Text Text Text tExt</p>
+            </div>
+        </div>
+        <div class="footer-article">
+            <div class="article_img">Image</div>
+            <div>
+                <h2>Header</h2>
+                <p>Text Text Text Text Text Text tExt</p>
+            </div>
+        </div>
+        <div class="footer-article">
+            <div class="article_img">Image</div>
+            <div>
+                <h2>Header</h2>
+                <p>Text Text Text Text Text Text tExt</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

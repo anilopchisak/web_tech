@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratory work 3</title>
+<!--    lab2-->
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+<!--    lab3-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet"  href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+
+    <script>
+        $( function() {
+        $( document ).tooltip();
+        $( "#accordion" ).accordion();
+        $( "#datepicker" ).datepicker();
+        var spinner = $( "#spin" ).spinner();
+        var availableTags = [
+            "be", "beat", "become", "begin", "bend", "bet", "bite", "blow", "break", "bring",
+            "build", "buy", "catch", "choose", "come", "cost", "cut", "deal", "dig", "do",
+            "draw", "drink", "drive"
+        ];
+        $( "#tags" ).autocomplete({ source: availableTags });
+        } );
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <a>Site name</a>
+        <form method="get">
+            <i class="fa fa-search left-icon"></i>
+            <input class="tooltip" title="Enter your request here" placeholder="Search..." />
+<!--            <input name="search" placeholder="Search..." type="search">-->
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="content-container">
+        <div class="col">
+                <div class="content_b_img">
+                    Image
+                </div>
+
+                <div class="row">
+                    <div>
+                        <div class="content_s_img">Image</div>
+                    </div>
+                    <div>
+                        <div class="content_s_img">Image</div>
+                    </div>
+                    <div>
+                        <div class="content_s_img">Image</div>
+                    </div>
+                    <div>
+                        <div class="content_s_img">Image</div>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="col">
+            <div id="div_text">
+                <h1>Header</h1>
+                <p>Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text
+                Text Text Text Text Text Text Text Text Text Text Text Text </p>
+                <br>
+                <label>Enter a random number:</label>
+                <input id="spin" placeholder="Enter a number"/>
+                <br><br>
+                <label>Enter any irregular English word starting from b, c or d:</label>
+                <input id="tags" type="text" />
+                <br><br>
+                <label>Enter a date:</label>
+                <input id="datepicker" />
+                <br><br>
+                <div id="accordion">
+                     <h3>Section 1</h3>
+                     <div>
+                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit ame
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit
+                            faucibus urna. </p>
+                     </div>
+                     <h3>Section 2</h3>
+                     <div>
+                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit ame
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit
+                            faucibus urna. </p>
+                     </div>
+                    <h3>Section 3</h3>
+                     <div>
+                        <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit ame
+                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit
+                            faucibus urna. </p>
+                     </div>
+                </div>
+            </div>
+            <div class="content-col-buttons">
+                <button>Button</button>
+                <button>Button</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-article">
+            <div class="article_img">Image</div>
+            <div>
+                <h2>Header</h2>
+                <p>Text Text Text Text Text Text tExt</p>
+            </div>
+        </div>
+        <div class="footer-article">
+            <div class="article_img">Image</div>
+            <div>
+                <h2>Header</h2>
+                <p>Text Text Text Text Text Text tExt</p>
+            </div>
+        </div>
+        <div class="footer-article">
+            <div class="article_img">Image</div>
+            <div>
+                <h2>Header</h2>
+                <p>Text Text Text Text Text Text tExt</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
