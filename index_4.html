@@ -11,6 +11,9 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet"  href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
 
+    <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css"/>
+    <script src="https://js.arcgis.com/4.9/"></script>
+
     <script>
         $( function() {
         $( document ).tooltip();
@@ -24,20 +27,24 @@
         ];
         $( "#tags" ).autocomplete({ source: availableTags });
         } );
+
+        require(
+            [
+                "esri/Map",
+                "esri/views/MapView"
+            ],
+            function(Map, MapView) {
+                var map = new Map({ basemap: "osm" })
+                var view = new MapView({
+                    container: "map",
+                    map: map,
+                    zoom: 8,
+                    center: [54.72481846568987, 55.940902201873385]
+                });
+            }
+        )
     </script>
 
-    <!--    lab4-->
-    <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css"/>
-    <script src="https://js.arcgis.com/4.9/"></script>
-
-    <script>
-        require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
-            var map = new Map({ basemap: "streets" });
-            var view = new MapView({container: "map",
-                                    map: map
-                                    });
-        });
-    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -134,11 +141,7 @@
         </div>
     </div>
 
-    <div class="container-map">
-        <div id="map">
-
-        </div>
-    </div>
+    <div id="map"> </div>
 
     <div class="footer">
         <div class="footer-article">

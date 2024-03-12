@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laboratory work 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements
+    and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a href="#"><img src="http://placehold.it/300x60?text=LOGO" width="150" alt="" style="font-size: 20px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enter your request here">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div style="height:350px; width: 570px; margin-bottom: 15px;">
+                    <center>
+                        <img class="img_b" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg">
+                    </center>
+                </div>
+                <div class="row">
+                    <div class="img_s_div"><center><img class="img_s" src="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_4x3.jpg"></center></div>
+                    <div class="img_s_div"><center><img class="img_s" src="data:image/jpeg;base64,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"></center></div>
+                    <div class="img_s_div"><center><img class="img_s" src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg"></center></div>
+                    <div class="img_s_div"><center><img class="img_s" src="https://cdn.britannica.com/87/205187-050-BEE2B338/tapetum-lucidum-light-retina-night-vision-vertebrates.jpg"></center></div>
+                </div>
+            </div>
+            <div class="col">
+                <div id="div_text">
+                    <h1>Header</h1>
+                    <p>Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text
+                    Text Text Text Text Text Text Text Text Text Text Text Text </p>
+                    <div class="form-group">
+                        <input type="number" id="typeNumber" class="form-control" placeholder="Number input" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Irregular verbs starting with b" list="list-b" id="input-datalist">
+                        <datalist id="list-b">
+                            <option>be</option>
+                            <option>buy</option>
+                            <option>beat</option>
+                            <option>bear</option>
+                            <option>become</option>
+                            <option>beget</option>
+                            <option>begin</option>
+                            <option>bend</option>
+                            <option>bereave</option>
+                            <option>beseech</option>
+                            <option>bet</option>
+                            <option>bid</option>
+                            <option>bide</option>
+                            <option>bind</option>
+                            <option>bite</option>
+                            <option>bleed</option>
+                            <option>bless</option>
+                        </datalist>
+                    </div>
+                    <div class="form-group">
+                        <div class="datepicker date input-group">
+                          <input type="text" placeholder="Choose Date" class="form-control" id="fecha1">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                          </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="content-col-buttons">
+                    <button type="button" class="btn btn-outline-success">Button</button>
+                    <button type="button" class="btn btn-outline-success">Button</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="map"> </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-thumbnail" src="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_4x3.jpg">
+                    </div>
+                    <div class="col">
+                        <h2>Header</h2>
+                        <p>Text Text Text Text Text Text tExt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-thumbnail" src="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_4x3.jpg">
+                    </div>
+                    <div class="col">
+                        <h2>Header</h2>
+                        <p>Text Text Text Text Text Text tExt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-thumbnail" src="https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_4x3.jpg">
+                    </div>
+                    <div class="col">
+                        <h2>Header</h2>
+                        <p>Text Text Text Text Text Text tExt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/xcash/bootstrap-autocomplete@v2.3.7/dist/latest/bootstrap-autocomplete.min.js"></script>
+    <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.9/esri/css/main.css"/>
+    <script src="https://js.arcgis.com/4.9/"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)})
+
+        $(function () {
+              $(".datepicker").datepicker({
+                language: "es",
+                autoclose: true,
+                format: "dd/mm/yyyy",
+              });
+            });
+
+            document.addEventListener('DOMContentLoaded', e => {
+                $('#input-datalist').autocomplete()
+            }, false);
+
+            require(
+            [
+                "esri/Map",
+                "esri/views/MapView"
+            ],
+            function(Map, MapView) {
+                var map = new Map({ basemap: "osm" })
+                var view = new MapView({
+                    container: "map",
+                    map: map,
+                    zoom: 8,
+                    center: [54.72481846568987, 55.940902201873385]
+                });
+            }
+        )
+    </script>
+</body>
+</html>
